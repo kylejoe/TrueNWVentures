@@ -1733,3 +1733,7 @@ a#footerLink:hover{
 .panel-heading:hover {
   color: black;
 }
+.col-xs-6 .img-responsive{
+/*  width: 204px;
+  height: 153px;*/
+}
