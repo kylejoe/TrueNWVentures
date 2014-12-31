@@ -48,7 +48,7 @@ session_start();
 							<li><a href="index.html">Home</a></li>
 							<li><a href="properties-detail.html">Property</a></li>
 							<li><a href="about.html">Who are We</a></li>
-							<li><a href="sell.html">Sell Your House</a></li>
+							<li><a href="sell.php">Sell Your House</a></li>
 							<li><a href="faq.html">FAQ</a></li>
 							<li class="active"><a href="contact.php">Contact</a></li>
 						</ul>
@@ -178,3 +178,4 @@ session_start();
 		<script src="js/jquery.inview.js"></script>
 	</body>
 </html>
+<?php session_destroy(); ?>
