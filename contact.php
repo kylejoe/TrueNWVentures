@@ -119,7 +119,7 @@ session_start();
 							</p>
 							<p>
 								<span class="c-label"><i class="fa fa-envelope"></i> Email:</span>
-								<span class="c-text"><a href="#">Diskin@TrueNWVentures.com</a></span>
+								<span class="c-text">Diskin@TrueNWVentures.com</span>
 							</p>
 						</div>
 					</div>

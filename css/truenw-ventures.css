@@ -1718,8 +1718,8 @@ h6 {
   margin-top: 0;
 }
 
-#aboutSocialIcon{
-  margin-bottom: 10%;
+.caption.text-left{
+  margin-bottom: 8%
 }
 
 a#footerLink:hover{

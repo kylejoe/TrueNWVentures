@@ -491,3 +491,4 @@
 		<script src="js/jquery.inview.js"></script>
 	</body>
 </html>
+<?php session_destroy(); ?>
