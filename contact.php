@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -6,7 +10,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>404 Not Found</title>
+        <title>Contact</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width" />
 
@@ -16,12 +20,14 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
         <link rel="stylesheet" href="css/truenw-ventures.css" type='text/css' data-s="main">
         <link rel="stylesheet" href="css/animate.css" type='text/css' data-s="main">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
 		<div class="page-wrapper boxed">
-			
 			<!-- Navigation -->
 			<nav class="navbar-nw navbar-static-top" role="navigation">
 				<div class="container">
@@ -44,27 +50,82 @@
 							<li><a href="about.html">Who are We</a></li>
 							<li><a href="sell.html">Sell Your House</a></li>
 							<li><a href="faq.html">FAQ</a></li>
-							<li><a href="contact.php">Contact</a></li>
+							<li class="active"><a href="contact.php">Contact</a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</div>
 			</nav>
 			
+			<!-- Google Map -->
+			<!-- Maybe add this later?!?! -->
+<!-- 		<div id="map_canvas" class="map-lrg-height"></div> -->
+			
 			<!-- Main -->
-			<div class="container">
-				<!-- Featured Listings -->
-				<div class="row" data-animate="pulse">
-					<div class="col-xs-12">
-						<h1 class="main-header">404!<br /><strong>Page Not Found</strong></h1>
-					</div>
-					<div class="col-xs-12">
-						<p class="text-center"><strong>True NW Ventures</strong> couldn't find it.<br />The page may have been moved or deleted. Be sure to check your spelling.</p>
+			<div class="light-gray-bg inner-shadow">
+				<div class="container">
+					<!-- Contact -->
+					<div class="row med-margin" data-animate="fadeInDown">
+						<div class="col-xs-12">
+							<h1 class="main-header">Contact Us</h1>
+
+							<!-- Show success message after email sends -->
+							<?php 
+								if (isset($_SESSION['success'])) 
+								{
+									echo "<p class='success_message'> {$_SESSION['success']} </p>";
+									unset($_SESSION['success']);
+								}
+							?>
+
+
+							<p>If you would like to talk to us about a property or you have a question, please get in touch. Fill in our contact form below and we’ll get right back to you.</p>
+							<p>Whether you’re looking to buy or sell or just need more information about True NW Ventures, we’d love to hear from you.</p>
+							<p>Give us a call, drop us an email.</p>
+						</div>
+						<div class="col-sm-7">
+							<h3>Contact Form</h3>
+							<hr style="border-bottom: 1px solid #bbb;"/>
+							<form id="contact-form" method="post" class="form" role="form" action="process-contact.php">
+								<div class="row">
+									<div class="col-xs-6 col-md-6 form-group">
+										<label for="name">Name</label>
+										<input class="form-control" id="name" name="name" placeholder="John Doe" type="text" required autofocus />
+									</div>
+									<div class="col-xs-6 col-md-6 form-group">
+										<label for="email">Email Address</label>
+										<input class="form-control" id="email" name="email" placeholder="johndoe@yoursite.com" type="email" required />
+									</div>									
+									<div class="col-xs-12 form-group">
+										<label for="subject">Subject</label>
+										<input class="form-control" id="email" name="subject" placeholder="Subject" type="text" required />
+									</div>
+								</div>
+								<label for="message">Message</label>
+									<textarea class="form-control" id="message" name="message" placeholder="Message" rows="5" required></textarea>
+								<br />
+								<div class="row">
+									<div class="col-xs-12 col-md-12 form-group">
+										<button class="btn btn-unique btn-lg btn-block" name="submit" type="submit">Send</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-sm-5">
+							<h3>Or Reach Us Here</h3>
+							<hr style="border-bottom: 1px solid #bbb;"/>
+							<p>
+								<span class="c-label"><i class="fa fa-phone"></i> Phone:</span>
+								<span class="c-text">(360) 524-2515</span>
+							</p>
+							<p>
+								<span class="c-label"><i class="fa fa-envelope"></i> Email:</span>
+								<span class="c-text"><a href="#">Diskin@TrueNWVentures.com</a></span>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 			
-				<img class="img-responsive" data-animate="fadeInDown" src="images/404.png" alt="Error Page Not Found" />
-
 			<footer id="footer">
 				<div class="container">
 
@@ -101,7 +162,9 @@
 
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jet-estate.js"></script>
-
+		
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		
         <script>
 			/*
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
@@ -109,14 +172,6 @@
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
 			*/
-			
-			$(document).ready(function() {
-				// Set the carousel options
-				$('#quote-carousel').carousel({
-					pause: true,
-					interval: 4000,
-				});
-			});
         </script>
 		
 		<!-- Put this in the last -->

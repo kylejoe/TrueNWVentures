@@ -53,7 +53,7 @@
 							<li><a href="about.html">Who are We</a></li>
 							<li class="active"><a href="sell.html">Sell Your House</a></li>
 							<li><a href="faq.html">FAQ</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="contact.php">Contact</a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</div>
@@ -400,8 +400,8 @@
 							<!-- Submit -->
 							<div class="form-group">
 								<div class="col-sm-offset-5 col-sm-10">
-									<button type="submit" class="btn btn-default">Submit</button>
-									<button type="submit" class="btn btn-default">Reset</button>
+									<button type="submit" class="btn btn-unique">Submit</button>
+									<button type="submit" class="btn btn-unique">Reset</button>
 								</div>
 							</div>
 						</form>
