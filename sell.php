@@ -195,8 +195,8 @@
 							</div>
 							<!-- What is the best way for us to contact you? -->
 							<div class="form-group">
-								<label for="bestcontact" class="col-sm-2 control-label">What is the best way to contact you:</label>
-								<div class="col-sm-9">
+								<label for="bestcontact" class="col-sm-3 control-label">What is the best way to contact you:</label>
+								<div class="col-sm-8">
 									<input type="text" class="form-control" name="bestcontact" placeholder="">
 								</div>
 							</div>
