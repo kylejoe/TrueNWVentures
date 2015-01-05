@@ -90,7 +90,7 @@
 									<!-- Your Contact Info -->
 						<!--  -->
 						<h4 class="col-sm-offset-5"><strong>Your contact Information</strong></h4>
-						<form class="form-horizontal" method="post" role="form" action="process-sell.php">
+						<form class="form-horizontal" method="post" role="form" id="myForm" action="process-sell.php">
 							<!-- Name -->
 							<div class="form-group">
 								<label for="name" class="col-sm-2 control-label">Name:</label>
@@ -309,21 +309,20 @@
 								<label for="repairs" class="col-sm-2 control-label">What kinds of repairs or maintenance does the house need?</label>
 								<div class="col-sm-9">
 									<textarea class="form-control" name="propRepairs"></textarea>
-									<!-- <input type="text" class="form-control" name="propRepairs" placeholder="" required> -->
 								</div>
 							</div>							
 							<!-- Why are you selling? -->
 							<div class="form-group">
 								<label for="selling" class="col-sm-2 control-label">Why are you considering selling your house?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="propSell" placeholder="" required>
+									<textarea class="form-control" name="propSell" placeholder="" required></textarea>
 								</div>
 							</div>							
 							<!-- When would you like to sell? -->
 							<div class="form-group">
 								<label for="sellwhen" class="col-sm-2 control-label">When would you like to sell your house?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="propSellWhen" placeholder="" required>
+									<textarea class="form-control" name="propSellWhen" placeholder="" required></textarea>
 								</div>
 							</div>
 							<!--  -->
@@ -419,7 +418,7 @@
 							<div class="form-group">
 								<label for="hear" class="col-sm-2 control-label">How did you hear about us?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="hearAbout" placeholder="" required>
+									<textarea class="form-control" name="hearAbout" placeholder="" required></textarea>
 								</div>
 							</div>
 							<!-- Submit -->
@@ -427,7 +426,7 @@
 								<div class="col-sm-offset-5 col-sm-10">
 									<button type="submit" name="submit" class="btn btn-unique">Submit</button>
 									<!-- Reset with JavaScript?!?!?! -->
-									<button type="submit" class="btn btn-unique">Reset</button>
+									<button type="submit" class="btn btn-unique" onclick="resetForm()">Reset</button>
 								</div>
 							</div>
 						</form>
@@ -491,6 +490,11 @@
 				$('.crsl-items').responsiveCarousel({visible: 3, itemMinWidth:250, itemMargin:15});
 				// Removed autoRotate: 6000, speed: 500
 			});
+
+			// Reset Form
+			function resetForm() {
+    			document.getElementById("myForm").reset();
+			}
         </script>
 		
 		<!-- Put this in the last -->
