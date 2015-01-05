@@ -2,8 +2,10 @@
 
 session_start();
 
+// Diskin@TrueNWVentures.com
+
 //Send to
-$to="Diskin@TrueNWVentures.com";
+$to="halterman.kyle@gmail.com";
 
 //Mailing Info
 
@@ -99,7 +101,7 @@ $headers = "This message is from $name email address: $from";
 
 if (isset($_POST['submit'])) 
 {
-	$_SESSION['success'] = "Your information has been sent we will be in contact with you shortly.";
+	$_SESSION['success'] = "Your information has been sent we will be in contact with you shortly, thank you!";
 
 	mail($to, $subject, $message, $headers);
 	header('location: sell.php');

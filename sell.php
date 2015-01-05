@@ -50,7 +50,12 @@
 					<div class="collapse navbar-collapse" id="navbar-collapse">
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="properties-detail.html">Property</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Properties <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown-menu">
+									<li><a href="skagit-house.html">Skagit</a></li>
+								</ul>
+							</li>
 							<li><a href="about.html">Who are We</a></li>
 							<li class="active"><a href="sell.php">Sell Your House</a></li>
 							<li><a href="faq.html">FAQ</a></li>
@@ -64,7 +69,7 @@
 			<div class="light-gray-bg inner-shadow">
 				<div class="container">
 					<!-- Featured Listings -->
-					<div class="row med-margin">
+					<div class="row med-margin" data-animate="fadeInUp">
 						<div class="col-xs-12">
 							<h1 class="main-header">We Buy <span>Houses!</span> </h1>
 
@@ -90,21 +95,21 @@
 							<div class="form-group">
 								<label for="name" class="col-sm-2 control-label">Name:</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="name" placeholder="Name">
+									<input type="text" class="form-control" name="name" placeholder="Name" required>
 								</div>
 							</div>
 							<!-- Address -->
 							<div class="form-group">
 								<label for="address" class="col-sm-2 control-label">Address:</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="address" placeholder="Address">
+									<input type="text" class="form-control" name="address" placeholder="Address" required>
 								</div>
 							</div>
 							<!-- City -->
 							<div class="form-group">
 								<label for="city" class="col-sm-2 control-label">City:</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="city" placeholder="City">
+									<input type="text" class="form-control" name="city" placeholder="City" required>
 								</div>
 							</div>
 							<!-- State -->
@@ -169,35 +174,35 @@
 							<div class="form-group">
 								<label for="zip" class="col-sm-2 control-label">Zip Code:</label>
 								<div class="col-sm-3">
-									<input type="text" class="form-control" name="zip" placeholder="Zip Code">
+									<input type="text" class="form-control" name="zip" placeholder="Zip Code" required>
 								</div>
 							</div>
 							<!-- Daytime phone number -->
 							<div class="form-group">
 								<label for="daytimephone" class="col-sm-2 control-label">Daytime Phone Number:</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="phone1" placeholder="Day Phone">
+									<input type="text" class="form-control" name="phone1" placeholder="Day Phone" required>
 								</div>
 							</div>
 							<!-- Evening phone number -->
 							<div class="form-group">
 								<label for="eveningphone" class="col-sm-2 control-label">Evening Phone Number:</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="phone2" placeholder="Evening Phone">
+									<input type="text" class="form-control" name="phone2" placeholder="Evening Phone" required>
 								</div>
 							</div>
 							<!-- Email address -->
 							<div class="form-group">
 								<label for="email" class="col-sm-2 control-label">Email:</label>
 								<div class="col-sm-9">
-									<input type="email" class="form-control" name="email" placeholder="Email">
+									<input type="email" class="form-control" name="email" placeholder="Email" required>
 								</div>
 							</div>
 							<!-- What is the best way for us to contact you? -->
 							<div class="form-group">
 								<label for="bestcontact" class="col-sm-3 control-label">What is the best way to contact you:</label>
 								<div class="col-sm-8">
-									<input type="text" class="form-control" name="bestcontact" placeholder="">
+									<input type="text" class="form-control" name="bestcontact" placeholder="" required>
 								</div>
 							</div>
 							<!--  -->
@@ -208,116 +213,117 @@
 							<div class="form-group">
 								<label for="propAddressRadio" class="col-sm-2 control-label">Same as my address above?</label>
 									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsAddress" value="Yes"> Yes
+  										<input type="radio" name="radioOptionsAddress" value="Yes" required> Yes
 									</label>
 									<label class="radio-inline">
-									 	<input type="radio" name="radioOptionsAddress" value="No"> No
+									 	<input type="radio" name="radioOptionsAddress" value="No" require> No
 									</label>
 							</div>
 							<!-- Address -->
 							<div class="form-group">
 								<label for="propAddress" class="col-sm-2 control-label">Address:</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="propAddress" placeholder="Address">
+									<input type="text" class="form-control" name="propAddress" placeholder="Address" required>
 								</div>
 							</div>
 							<!-- City -->
 							<div class="form-group">
 								<label for="propCity" class="col-sm-2 control-label">City:</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="propCity" placeholder="City">
+									<input type="text" class="form-control" name="propCity" placeholder="City" required>
 								</div>
 							</div>
 							<!-- Number of Bedrooms -->
 							<div class="form-group">
 								<label for="bedrooms" class="col-sm-2 control-label">Number of Bedrooms:</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="propBedrooms" placeholder="">
+									<input type="text" class="form-control" name="propBedrooms" placeholder="" required>
 								</div>
 							</div>					
 							<!-- Number of Bathrooms -->
 							<div class="form-group">
 								<label for="bathrooms" class="col-sm-2 control-label">Number of Bathrooms:</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="propBathrooms" placeholder="">
+									<input type="text" class="form-control" name="propBathrooms" placeholder="" required>
 								</div>
 							</div>							
 							<!-- Square Footage -->
 							<div class="form-group">
 								<label for="squarefootage" class="col-sm-2 control-label">Square Footage:</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="propSquare" placeholder="">
+									<input type="text" class="form-control" name="propSquare" placeholder="" required>
 								</div>
 							</div>
 							<!-- Garage? -->
 							<div class="form-group">
 								<label for="garage" class="col-sm-2 control-label">Is there a garage?</label>
 									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsGarage" value="Yes"> Yes
+  										<input type="radio" name="radioOptionsGarage" value="Yes" required> Yes
 									</label>
 									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsGarage" value="No"> No
+									  <input type="radio" name="radioOptionsGarage" value="No" required> No
 									</label>
 							</div>							
 							<!-- Rental or Residential -->
 							<div class="form-group">
 								<label for="rentres" class="col-sm-2 control-label">Is this house a rental or your personal residence?</label>
 									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsRentRes" value="Rental"> Rental
+  										<input type="radio" name="radioOptionsRentRes" value="Rental" required> Rental
 									</label>
 									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsRentRes" value="Residence"> Residence
+									  <input type="radio" name="radioOptionsRentRes" value="Residence" required> Residence
 									</label>
 							</div>							
 							<!-- If rental is property currently rented -->
 							<div class="form-group">
 								<label for="currentrent" class="col-sm-2 control-label">If a rental, is your property currently rented?</label>
 									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsCurrentRent" value="Yes"> Yes
+  										<input type="radio" name="radioOptionsCurrentRent" value="Yes" required> Yes
 									</label>
 									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsCurrentRent" value="No"> No
+									  <input type="radio" name="radioOptionsCurrentRent" value="No" required> No
 									</label>									
 									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsCurrentRent" value="N/A"> N/A
+									  <input type="radio" name="radioOptionsCurrentRent" value="N/A" required> N/A
 									</label>
 							</div>
 							<!-- How much is the current rent -->
 							<div class="form-group">
 								<label for="currentrentvalue" class="col-sm-2 control-label">How much is the current rent?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="propRentValue" placeholder="">
+									<input type="text" class="form-control" name="propRentValue" placeholder="" required>
 								</div>
 							</div>
 							<!-- Is your property vacant -->
 							<div class="form-group">
 								<label for="propvaca" class="col-sm-2 control-label">Is your property vacant?</label>
 									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsVacant" value="Yes"> Yes
+  										<input type="radio" name="radioOptionsVacant" value="Yes" required> Yes
 									</label>
 									<label class="radio-inline">
-										<input type="radio" name="radioOptionsVacant" value="No"> No
+										<input type="radio" name="radioOptionsVacant" value="No" required> No
 									</label>
 							</div>
 							<!-- Repairs -->
 							<div class="form-group">
 								<label for="repairs" class="col-sm-2 control-label">What kinds of repairs or maintenance does the house need?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="propRepairs" placeholder="">
+									<textarea class="form-control" name="propRepairs"></textarea>
+									<!-- <input type="text" class="form-control" name="propRepairs" placeholder="" required> -->
 								</div>
 							</div>							
 							<!-- Why are you selling? -->
 							<div class="form-group">
 								<label for="selling" class="col-sm-2 control-label">Why are you considering selling your house?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="propSell" placeholder="">
+									<input type="text" class="form-control" name="propSell" placeholder="" required>
 								</div>
 							</div>							
 							<!-- When would you like to sell? -->
 							<div class="form-group">
 								<label for="sellwhen" class="col-sm-2 control-label">When would you like to sell your house?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="propSellWhen" placeholder="">
+									<input type="text" class="form-control" name="propSellWhen" placeholder="" required>
 								</div>
 							</div>
 							<!--  -->
@@ -328,92 +334,92 @@
 							<div class="form-group">
 								<label for="howmuch" class="col-sm-2 control-label">How much are your monthly mortgage payments?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="monthlyMort" placeholder="">
+									<input type="text" class="form-control" name="monthlyMort" placeholder="" required>
 								</div>
 							</div>							
 							<!-- How much is your 1st mortgage balance -->
 							<div class="form-group">
 								<label for="firstmort" class="col-sm-2 control-label">How much is your first mortgage balance?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="firstMort" placeholder="">
+									<input type="text" class="form-control" name="firstMort" placeholder="" required>
 								</div>
 							</div>							
 							<!-- How much is your 2st mortgage balance -->
 							<div class="form-group">
 								<label for="secondmort" class="col-sm-2 control-label">How much is your second mortgage balance?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="secondMort" placeholder="">
+									<input type="text" class="form-control" name="secondMort" placeholder="" required>
 								</div>
 							</div>							
 							<!-- How much are your annual prop tax -->
 							<div class="form-group">
 								<label for="proptax" class="col-sm-2 control-label">How much are your annual property taxes?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="propTax" placeholder="">
+									<input type="text" class="form-control" name="propTax" placeholder="" required>
 								</div>
 							</div>							
 							<!-- How much are your annual insurance premium -->
 							<div class="form-group">
 								<label for="inspre" class="col-sm-2 control-label">How much is your annual insurance premium?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="insPre" placeholder="">
+									<input type="text" class="form-control" name="insPre" placeholder="" required>
 								</div>
 							</div>							
 							<!-- Taxes and insurance included in mortgage -->
 							<div class="form-group">
 								<label for="taxins" class="col-sm-2 control-label">Are your property taxes and insurance included in your mortgage payment?</label>
 									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsTaxIns" value="Yes"> Yes
+  										<input type="radio" name="radioOptionsTaxIns" value="Yes" required> Yes
 									</label>
 									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsTaxIns" value="No"> No
+									  <input type="radio" name="radioOptionsTaxIns" value="No" required> No
 									</label>
 							</div>
 							<!-- Feel house is worth -->
 							<div class="form-group">
 								<label for="houseworth" class="col-sm-2 control-label">How much do you feel your house is your worth?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="houseWorth" placeholder="">
+									<input type="text" class="form-control" name="houseWorth" placeholder="" required>
 								</div>
 							</div>
 							<!-- Sell for what it is owed -->
 							<div class="form-group">
 								<label for="owed" class="col-sm-2 control-label">Would you sell your house for what is owed?</label>
 									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsOwed" value="Yes"> Yes
+  										<input type="radio" name="radioOptionsOwed" value="Yes" required> Yes
 									</label>
 									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsOwed" value="No"> No
+									  <input type="radio" name="radioOptionsOwed" value="No" required> No
 									</label>									
 									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsOwed" value="Undecided"> Undecided
+									  <input type="radio" name="radioOptionsOwed" value="Undecided" required> Undecided
 									</label>
 							</div>
 							<!-- Let us take mortgage payment -->
 							<div class="form-group">
 								<label for="takemort" class="col-sm-2 control-label">Would you be willing to let us take over the mortgage payments?</label>
 									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsTakeMort" value="Yes"> Yes
+  										<input type="radio" name="radioOptionsTakeMort" value="Yes" required> Yes
 									</label>
 									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsTakeMort" value="No"> No
+									  <input type="radio" name="radioOptionsTakeMort" value="No" required> No
 									</label>									
 									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsTakeMort" value="Undecided"> Undecided
+									  <input type="radio" name="radioOptionsTakeMort" value="Undecided" required> Undecided
 									</label>
 							</div>
 							<!-- Least accept -->
 							<div class="form-group">
 								<label for="leastaccept" class="col-sm-2 control-label">If we can buy your house in 7 days or less, what is the least you will accept?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="leastAcc" placeholder="">
+									<input type="text" class="form-control" name="leastAcc" placeholder="" required>
 								</div>
 							</div>							
 							<!-- Hear about us LAST OPTION BEFORE SUBMIT -->
 							<div class="form-group">
 								<label for="hear" class="col-sm-2 control-label">How did you hear about us?</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="hearAbout" placeholder="">
+									<input type="text" class="form-control" name="hearAbout" placeholder="" required>
 								</div>
 							</div>
 							<!-- Submit -->
