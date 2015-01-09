@@ -39,7 +39,7 @@ session_start();
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="" href="#"><img src="images/True_NW_Ventures_Icon_Text.png" height="100px" width="200px" alt="Jet Estate" /></a>
+						<img src="images/True_NW_Ventures_Icon_Text.png" height="100px" width="200px" alt="True NW Ventures" />
 					</div>
 					
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,6 +50,7 @@ session_start();
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Properties <i class="fa fa-angle-down"></i></a>
 								<ul class="dropdown-menu">
 									<li><a href="skagit-house.html">Skagit</a></li>
+									<li><a href="illinois-st-house.html">Illinois St.</a></li>									
 								</ul>
 							</li>
 							<li><a href="about.html">Who are We</a></li>

@@ -43,7 +43,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="" href="#"><img src="images/True_NW_Ventures_Icon_Text.png" height="100px" width="200px" alt="Jet Estate" /></a>
+						<img src="images/True_NW_Ventures_Icon_Text.png" height="100px" width="200px" alt="True NW Ventures" />
 					</div>
 					
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,6 +54,7 @@
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Properties <i class="fa fa-angle-down"></i></a>
 								<ul class="dropdown-menu">
 									<li><a href="skagit-house.html">Skagit</a></li>
+									<li><a href="illinois-st-house.html">Illinois St.</a></li>									
 								</ul>
 							</li>
 							<li><a href="about.html">Who are We</a></li>
@@ -200,8 +201,8 @@
 							</div>
 							<!-- What is the best way for us to contact you? -->
 							<div class="form-group">
-								<label for="bestcontact" class="col-sm-3 control-label">What is the best way to contact you:</label>
-								<div class="col-sm-8">
+								<label for="bestcontact" class="col-sm-2 control-label">What is the best way to contact you:</label>
+								<div class="col-sm-9">
 									<input type="text" class="form-control" name="bestcontact" placeholder="" required>
 								</div>
 							</div>
@@ -212,12 +213,14 @@
 							<!-- Same as address above -->
 							<div class="form-group">
 								<label for="propAddressRadio" class="col-sm-2 control-label">Same as my address above?</label>
-									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsAddress" value="Yes" required> Yes
-									</label>
-									<label class="radio-inline">
-									 	<input type="radio" name="radioOptionsAddress" value="No" require> No
-									</label>
+									<div class="col-sm-3">
+										<label class="radio-inline">
+	  										<input type="radio" name="radioOptionsAddress" value="Yes" required> Yes
+										</label>
+										<label class="radio-inline">
+										 	<input type="radio" name="radioOptionsAddress" value="No" require> No
+										</label>
+									</div>
 							</div>
 							<!-- Address -->
 							<div class="form-group">
@@ -257,35 +260,41 @@
 							<!-- Garage? -->
 							<div class="form-group">
 								<label for="garage" class="col-sm-2 control-label">Is there a garage?</label>
-									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsGarage" value="Yes" required> Yes
-									</label>
-									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsGarage" value="No" required> No
-									</label>
+									<div class="col-sm-3">
+										<label class="radio-inline">
+	  										<input type="radio" name="radioOptionsGarage" value="Yes" required> Yes
+										</label>
+										<label class="radio-inline">
+										  <input type="radio" name="radioOptionsGarage" value="No" required> No
+										</label>
+									</div>
 							</div>							
 							<!-- Rental or Residential -->
 							<div class="form-group">
 								<label for="rentres" class="col-sm-2 control-label">Is this house a rental or your personal residence?</label>
-									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsRentRes" value="Rental" required> Rental
-									</label>
-									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsRentRes" value="Residence" required> Residence
-									</label>
+									<div class="col-sm-3">
+										<label class="radio-inline">
+	  										<input type="radio" name="radioOptionsRentRes" value="Rental" required> Rental
+										</label>
+										<label class="radio-inline">
+										  <input type="radio" name="radioOptionsRentRes" value="Residence" required> Residence
+										</label>
+									</div>
 							</div>							
 							<!-- If rental is property currently rented -->
 							<div class="form-group">
 								<label for="currentrent" class="col-sm-2 control-label">If a rental, is your property currently rented?</label>
-									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsCurrentRent" value="Yes" required> Yes
-									</label>
-									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsCurrentRent" value="No" required> No
-									</label>									
-									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsCurrentRent" value="N/A" required> N/A
-									</label>
+									<div class="col-sm-3">
+										<label class="radio-inline">
+	  										<input type="radio" name="radioOptionsCurrentRent" value="Yes" required> Yes
+										</label>
+										<label class="radio-inline">
+										  <input type="radio" name="radioOptionsCurrentRent" value="No" required> No
+										</label>									
+										<label class="radio-inline">
+										  <input type="radio" name="radioOptionsCurrentRent" value="N/A" required> N/A
+										</label>
+									</div>
 							</div>
 							<!-- How much is the current rent -->
 							<div class="form-group">
@@ -297,12 +306,14 @@
 							<!-- Is your property vacant -->
 							<div class="form-group">
 								<label for="propvaca" class="col-sm-2 control-label">Is your property vacant?</label>
-									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsVacant" value="Yes" required> Yes
-									</label>
-									<label class="radio-inline">
-										<input type="radio" name="radioOptionsVacant" value="No" required> No
-									</label>
+									<div class="col-sm-3">
+										<label class="radio-inline">
+	  										<input type="radio" name="radioOptionsVacant" value="Yes" required> Yes
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="radioOptionsVacant" value="No" required> No
+										</label>
+									</div>
 							</div>
 							<!-- Repairs -->
 							<div class="form-group">
@@ -367,12 +378,14 @@
 							<!-- Taxes and insurance included in mortgage -->
 							<div class="form-group">
 								<label for="taxins" class="col-sm-2 control-label">Are your property taxes and insurance included in your mortgage payment?</label>
-									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsTaxIns" value="Yes" required> Yes
-									</label>
-									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsTaxIns" value="No" required> No
-									</label>
+									<div class="col-sm-3">
+										<label class="radio-inline">
+	  										<input type="radio" name="radioOptionsTaxIns" value="Yes" required> Yes
+										</label>
+										<label class="radio-inline">
+										  <input type="radio" name="radioOptionsTaxIns" value="No" required> No
+										</label>
+									</div>
 							</div>
 							<!-- Feel house is worth -->
 							<div class="form-group">
@@ -384,28 +397,32 @@
 							<!-- Sell for what it is owed -->
 							<div class="form-group">
 								<label for="owed" class="col-sm-2 control-label">Would you sell your house for what is owed?</label>
-									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsOwed" value="Yes" required> Yes
-									</label>
-									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsOwed" value="No" required> No
-									</label>									
-									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsOwed" value="Undecided" required> Undecided
-									</label>
+									<div class="col-sm-3">
+										<label class="radio-inline">
+	  										<input type="radio" name="radioOptionsOwed" value="Yes" required> Yes
+										</label>
+										<label class="radio-inline">
+										  <input type="radio" name="radioOptionsOwed" value="No" required> No
+										</label>									
+										<label class="radio-inline">
+										  <input type="radio" name="radioOptionsOwed" value="Undecided" required> Undecided
+										</label>
+									</div>
 							</div>
 							<!-- Let us take mortgage payment -->
 							<div class="form-group">
 								<label for="takemort" class="col-sm-2 control-label">Would you be willing to let us take over the mortgage payments?</label>
-									<label class="radio-inline">
-  										<input type="radio" name="radioOptionsTakeMort" value="Yes" required> Yes
-									</label>
-									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsTakeMort" value="No" required> No
-									</label>									
-									<label class="radio-inline">
-									  <input type="radio" name="radioOptionsTakeMort" value="Undecided" required> Undecided
-									</label>
+									<div class="col-sm-3">
+										<label class="radio-inline">
+	  										<input type="radio" name="radioOptionsTakeMort" value="Yes" required> Yes
+										</label>
+										<label class="radio-inline">
+										  <input type="radio" name="radioOptionsTakeMort" value="No" required> No
+										</label>									
+										<label class="radio-inline">
+										  <input type="radio" name="radioOptionsTakeMort" value="Undecided" required> Undecided
+										</label>
+									</div>
 							</div>
 							<!-- Least accept -->
 							<div class="form-group">
