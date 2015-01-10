@@ -95,7 +95,11 @@ session_start();
 								<div class="row">
 									<div class="col-xs-6 col-md-6 form-group">
 										<label for="name">Name</label>
-										<input class="form-control" id="name" name="name" placeholder="John Doe" type="text" required autofocus />
+										<div class="input-group">
+											<!-- Add this icon possibly!?!?!?!?!?!?!?!?!!!! -->
+											<div class="input-group-addon" style="background-color:#ffffff;"><span class="glyphicon glyphicon-user"></span></div>
+											<input class="form-control" id="name" name="name" placeholder="John Doe" type="text" required autofocus />
+										</div>
 									</div>
 									<div class="col-xs-6 col-md-6 form-group">
 										<label for="email">Email Address</label>
