@@ -54,6 +54,7 @@ session_start();
 								</ul>
 							</li>
 							<li><a href="about.html">Who are We</a></li>
+							<li><a href="testimonials.html">Testimonials</a></li>
 							<li><a href="sell.php">Sell Your House</a></li>
 							<li><a href="faq.html">FAQ</a></li>
 							<li class="active"><a href="contact.php">Contact</a></li>
