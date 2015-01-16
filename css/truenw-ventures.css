@@ -1415,7 +1415,7 @@ h6 {
 }
 /* Form Control */
 .form-control {
-  border-radius: 0;
+  border-radius: 6px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   padding: 9px 14px;
   height: 40px;
@@ -1711,7 +1711,7 @@ h6 {
   background: #32c8de;
 }
 
-/*Custom Chages*/
+/*============================Custom Chages================================*/
 
 #aboutPageH3{
   margin-top: 0;
@@ -1719,10 +1719,6 @@ h6 {
 
 .caption.text-left{
   margin-bottom: 8%
-}
-
-a#footerLink:hover{
-  color: #990000;
 }
 
 .panel-default > .panel-heading {
@@ -1745,4 +1741,8 @@ a#footerLink:hover{
 .success_message{
   color: green;
   font-size: 16px;
+}
+
+div.form-group{
+  margin: 5% 0px;
 }
