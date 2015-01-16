@@ -49,7 +49,7 @@ body {
 /* Links */
 a {
   color: #AD362E;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 a:hover,
 a:focus {
@@ -1398,7 +1398,7 @@ h6 {
   border-bottom: 0px;
 }
 #footer a:hover {
-  color: #fff;
+  color: #AD362E;
 }
 #footer .social {
   font-size: 18px;
@@ -1710,7 +1710,6 @@ h6 {
 .color-box.light-blue {
   background: #32c8de;
 }
-
 
 /*Custom Chages*/
 

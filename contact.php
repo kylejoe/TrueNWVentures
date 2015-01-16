@@ -104,11 +104,17 @@ session_start();
 									</div>
 									<div class="col-xs-6 col-md-6 form-group">
 										<label for="email">Email Address</label>
-										<input class="form-control" id="email" name="email" placeholder="johndoe@yoursite.com" type="email" required />
+										<div class="input-group">
+											<div class="input-group-addon" style="background-color:#ffffff;"><span class="glyphicon glyphicon-envelope"></span></div>
+											<input class="form-control" id="email" name="email" placeholder="johndoe@yoursite.com" type="email" required />
+										</div>
 									</div>									
 									<div class="col-xs-12 form-group">
 										<label for="subject">Subject</label>
-										<input class="form-control" id="email" name="subject" placeholder="Subject" type="text" required />
+										<div class="input-group">
+											<div class="input-group-addon" style="background-color:#ffffff;"><span class="glyphicon glyphicon-pencil"></div>
+											<input class="form-control" id="email" name="subject" placeholder="Subject" type="text" required />
+										</div>
 									</div>
 								</div>
 								<label for="message">Message</label>
@@ -142,13 +148,13 @@ session_start();
 
 					<div class="row">
 						<!-- col #1 -->
-							<h4 class="col-lg-3 col-sm-3" id="footer-heading">Keep in <strong>Touch</strong></h4>
+							<h4 class="col-sm-3 col-lg-3 text-center" id="footer-heading">Keep in <strong>Touch</strong></h4>
 							<a href="mailto:Diskin@TrueNWVentures.com" target="_top">
-								<p class="col-lg-4 col-sm-3">Email: Diskin@TrueNWVentures.com</p>
+								<p class="col-sm-3 col-lg-4 text-center">Email: Diskin@TrueNWVentures.com</p>
 							</a>
-							<p class="col-lg-3 col-sm-3">Phone: (360) 524-2515</p>
+							<p class="col-sm-3 col-lg-3 text-center">Phone: (360) 524-2515</p>
 
-							<p class="col-lg-2 col-sm-3"><!-- social -->
+							<p class="col-sm-3 col-lg-2 text-center"><!-- social -->
 								<a class="social social-fb" href="https://www.facebook.com/Truenwventures" target="_blank"><i class="fa fa-facebook"></i></a>
 								<a class="social social-linkedin" href="https://www.linkedin.com/pub/diskin-young/36/1a9/a5b" target="_blank"><i class="fa fa-linkedin"></i></a>
 							</p><!-- /social -->
