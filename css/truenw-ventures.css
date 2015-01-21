@@ -1742,3 +1742,19 @@ h6 {
   color: green;
   font-size: 16px;
 }
+
+.form-group{
+  margin-bottom: 2%;
+}
+
+#formZip{
+  padding-bottom: 2%;
+}
+
+.item blockquote p + p:before {
+  content: none;
+}
+
+a#footerLink:hover{
+  color: #990000;
+}

@@ -73,7 +73,7 @@ session_start();
 					<!-- Contact -->
 					<div class="row med-margin" data-animate="fadeInDown">
 						<div class="col-xs-12">
-							<h1 class="main-header">Contact Us</h1>
+							<h1 class="main-header">Contact <span>Us</span></h1>
 
 							<!-- Show success message after email sends -->
 							<?php 
@@ -178,7 +178,7 @@ session_start();
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jet-estate.js"></script>
+        <script src="js/truenw-ventures.js"></script>
 		
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		
