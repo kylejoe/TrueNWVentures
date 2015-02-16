@@ -1,1 +1,1 @@
-TrueNWVentures is a real estate website I am building for a friend. Hopefully work will be finished soon.
+TrueNWVentures is a real estate website that I built for my friend. Please feel free to check it out. 
