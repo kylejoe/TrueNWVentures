@@ -1758,3 +1758,7 @@ h6 {
 a#footerLink:hover{
   color: #990000;
 }
+
+#accordion{
+  padding: 0 10px;
+}
